@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <h1> Hello, {{name}}! </h1>
+    </head>
+    <body>
+        <p> Today's top technology headlines are...</p>
+        <ol>
+            {% for key,value in headlines.items() %}
+                <li>
+                    <a href={{value}}> {{key}}</a>
+                </li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
